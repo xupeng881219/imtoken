@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>协议</title>
+    <link rel="stylesheet" href="css/agreement.css">
+    <script src="js/flexble.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="header more">
+    服务及隐私协议
+    <i></i>
+</div>
+<div class="main">
+
+</div>
+<div class="footer">
+    <div class="agreement">
+        <i class="ckb"></i>
+        我已经仔细阅读并同意以上条款
+    </div>
+    <div class="next">继续</div>
+</div>
+<script>
+    $(".ckb").click(function(){
+        $(this).toggleClass('active');
+        $('.next').toggleClass('active');
+    })
+
+</script>
+</body>
+</html>

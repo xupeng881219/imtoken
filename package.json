@@ -1,0 +1,25 @@
+{
+  "name": "imtoken",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xu_peng",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
+    "gulp-px2rem-plugin": "^0.4.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9",
+    "node-sass": "^4.7.2",
+    "run-sequence": "^2.2.0"
+  },
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-px2rem-plugin": "^0.4.0"
+  },
+  "description": ""
+}

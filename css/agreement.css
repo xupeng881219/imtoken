@@ -1,0 +1,187 @@
+@charset "UTF-8";
+html {
+  color: #000;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: '微软雅黑';
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+ins, a {
+  text-decoration: none;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.header {
+  width: 100%;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 1.3333em;
+  color: #585e69;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.header.more i {
+  position: absolute;
+  top: 50%;
+  right: 0.3467rem;
+  height: 0.5333rem;
+  width: 0.5333rem;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: url("../images/more.png");
+  background-size: cover;
+}
+
+.ckb {
+  width: 0.6667rem;
+  height: 0.6667rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.ckb.active {
+  background: url("../images/sure.png") no-repeat;
+  background-size: cover;
+  border: 2px solid #37bac9;
+}
+
+body {
+  padding-top: 1.2rem;
+  padding-bottom: 2.5867rem;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: 1px solid #ebebeb;
+}
+
+.footer .agreement {
+  height: 1.2800rem;
+  position: relative;
+  line-height: 1.2800rem;
+  padding-left: 1.2667rem;
+  color: #323232;
+  font-size: 0.3467rem;
+}
+
+.footer .agreement .ckb {
+  left: 0.4000rem;
+}
+
+.footer .next {
+  text-align: center;
+  height: 1.2667rem;
+  line-height: 1.2667rem;
+  font-size: 0.4267rem;
+  letter-spacing: 0.0667rem;
+  color: #fff;
+  background: #ddd;
+}
+
+.footer .next.active {
+  background: #37bac9;
+}
