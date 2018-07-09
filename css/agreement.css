@@ -151,6 +151,18 @@ body {
   padding-bottom: 2.5867rem;
 }
 
+.main {
+  color: #000;
+  font-size: 0.3467rem;
+  padding: 0.8000rem 0.5067rem 0;
+}
+
+.main h4 {
+  font-size: 0.4267rem;
+  text-align: center;
+  margin-bottom: 0.8000rem;
+}
+
 .footer {
   width: 100%;
   position: fixed;

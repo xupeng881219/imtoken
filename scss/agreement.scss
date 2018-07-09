@@ -3,6 +3,16 @@ body{
 	padding-top:1.2rem;
 	padding-bottom:194px;
 }
+.main{
+	color:#000;
+	font-size:26px;
+	padding:60px 38px 0;
+	h4{
+		font-size:32px;
+		text-align:center;
+		margin-bottom:60px;
+	}
+}
 .footer{
 	width:100%;
 	position:fixed;
@@ -32,5 +42,4 @@ body{
 			background: $theme_color;
 		}
 	}
-
 }
