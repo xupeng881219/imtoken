@@ -15,6 +15,13 @@ body{
 		margin-bottom:45px;
 		font-size:28px;
 	}
+	img{
+		display: block;
+		width:120px;
+		height:120px;
+		margin:0 auto 70px;
+	}
+
 	.word_list{
 		background: #ececec;
 		@include border-radius(10px);
@@ -57,5 +64,22 @@ body{
 				border-bottom:1px solid #8aabd1;
 			}
 		}
+	}
+}
+.backup_wallet{
+	p{
+		line-height:2em;
+		margin-bottom:80px;
+	}
+	.theme_color{
+		margin-top:80px;
+		text-align:center;
+		font-size:28px;
+		a{
+			color:$theme_color;
+		}
+	}
+	.btn_2{
+		width:100%;
 	}
 }

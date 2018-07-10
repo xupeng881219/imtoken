@@ -28,7 +28,9 @@ input{
 .clear{
 	zoom:1;
 }
-
+.hide{
+	display: none;
+}
 //变量
 $border_grey:1px solid #ebebeb;
 $theme_color:#37bac9;
@@ -68,26 +70,34 @@ $theme_color:#37bac9;
 	left:0;
 	text-align: center;
 	border-bottom:$border_grey;
-	&.more{		//更多按钮
-		i{
-			@include middle;
-			right:26px;
-			height:40px;
-			width:40px;
-			background: url("../images/more.png");
-			background-size:cover;
-		}
+	//更多按钮
+	.more{
+		@include middle;
+		right:26px;
+		height:40px;
+		width:40px;
+		background: url("../images/more.png");
+		background-size:cover;
 	}
-	&.back{		//后退按钮
-		s{
-			@include middle;
-			left:30px;
-			height:50px;
-			width:50px;
-			background: url("../images/back.png");
-			background-size:cover;
-		}
+	//后退按钮
+	.back{
+		@include middle;
+		left:30px;
+		height:50px;
+		width:50px;
+		background: url("../images/back.png");
+		background-size:cover;
 	}
+	//二维码
+	.scan{
+		@include middle;
+		right:26px;
+		height:40px;
+		width:40px;
+		background: url("../images/scan.png");
+		background-size:cover;
+	}
+
 }
 //checkbox
 .ckb{
@@ -130,18 +140,48 @@ $theme_color:#37bac9;
 	&.active{
 		background: $theme_color;
 	}
+	letter-spacing: 10px;
 }
 .btn_2{
 	text-align:center;
 	@include border-radius(8px);
 	color:#fff;
 	background: $theme_color;
-	font-size:30px;
+	font-size:32px;
 	@include line-height(90px);
 	margin:0 auto;
 	width:164px;
+	display: block;
+	letter-spacing: 10px;
 }
 //颜色
 .theme_color{
 	color:$theme_color;
+}
+//公共底部菜单
+.common_footer{
+	height:100px;
+	border-top:2px solid #fafafa;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	background: #f8f8f8;
+	padding-top:18px;
+	a{
+		display: inline-block;
+		height:76px;
+		width:25%;
+		text-align:center;
+		font-size:24px;
+		color:#5d697a;
+		padding-top:40px;
+		&.active{
+			color:$theme_color;
+		}
+		&:first-child{
+			background: url("../images/money.png") no-repeat center top;
+			background-size:40px;
+		}
+	}
 }
