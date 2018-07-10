@@ -1,6 +1,6 @@
-html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+html{color:#000;background:#fff;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 html *{outline:0;-webkit-text-size-adjust:none;-webkit-tap-highlight-color:rgba(0,0,0,0);box-sizing:border-box}
-html,body{font-family:'微软雅黑'}
+html,body{font-family:'微软雅黑';height:100%;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
 input,select,textarea{font-size:100%}
 table{border-collapse:collapse;border-spacing:0}
@@ -16,6 +16,10 @@ sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sup{top:-.5em}
 sub{bottom:-.25em}
 ins,a{text-decoration:none}
+input{
+	border:0;
+	outline:0;
+}
 .clear:after{
 	content: '';
 	display: block;
@@ -28,31 +32,59 @@ ins,a{text-decoration:none}
 //变量
 $border_grey:1px solid #ebebeb;
 $theme_color:#37bac9;
+
+
+//垂直居中
+@mixin middle{
+	position:absolute;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+//圆角
+@mixin border-radius($radius:50%){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+//文本垂直居中
+@mixin line-height($height){
+	height:$height;
+	line-height:$height;
+}
+
+
 //头部
 .header{
 	width:100%;
-	height:1.2rem;
-	line-height:1.2rem;
-	font-size:1.3333em;
+	@include line-height(1.2rem);
+	font-size:36px;
 	color:#585e69;
 	position:fixed;
 	top:0;
 	left:0;
 	text-align: center;
 	border-bottom:$border_grey;
-	&.more{
+	&.more{		//更多按钮
 		i{
-			position:absolute;
-			top:50%;
+			@include middle;
 			right:26px;
 			height:40px;
 			width:40px;
-			-webkit-transform: translateY(-50%);
-			-moz-transform: translateY(-50%);
-			-ms-transform: translateY(-50%);
-			-o-transform: translateY(-50%);
-			transform: translateY(-50%);
 			background: url("../images/more.png");
+			background-size:cover;
+		}
+	}
+	&.back{		//后退按钮
+		s{
+			@include middle;
+			left:30px;
+			height:50px;
+			width:50px;
+			background: url("../images/back.png");
 			background-size:cover;
 		}
 	}
@@ -61,20 +93,55 @@ $theme_color:#37bac9;
 .ckb{
 	width:50px;
 	height:50px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
+	@include border-radius();
 	border:2px solid #ddd;
-	position:absolute;
-	top:50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
+	@include middle;
 	&.active{
 		background: url("../images/sure.png") no-repeat;
 		background-size:cover;
 		border:2px solid $theme_color;
 	}
+}
+
+//input
+.one_line_input{
+	@include line-height(76px);
+	font-size:28px;
+	border-bottom:1px solid #c3c3c3;
+	width:100%;
+	color:#333;
+	margin-top:112-76px;
+	&::placeholder{
+		color:#c3c3c3;
+	}
+}
+.form_box{
+	padding:0 40px;
+}
+//按钮1
+.btn_1{
+	display: block;
+	text-align:center;
+	@include border-radius(10px);
+	color:#fff;
+	background: #d6d6d6;
+	@include line-height(90px);
+	font-size:28px;
+	&.active{
+		background: $theme_color;
+	}
+}
+.btn_2{
+	text-align:center;
+	@include border-radius(8px);
+	color:#fff;
+	background: $theme_color;
+	font-size:30px;
+	@include line-height(90px);
+	margin:0 auto;
+	width:164px;
+}
+//颜色
+.theme_color{
+	color:$theme_color;
 }

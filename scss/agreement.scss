@@ -20,9 +20,8 @@ body{
 	left:0;
 	border:$border_grey;
 	.agreement{
-		height:96px;
 		position:relative;
-		line-height:96px;
+		@include line-height(96px);
 		padding-left:95px;
 		color:#323232;
 		font-size:26px;
@@ -32,8 +31,7 @@ body{
 	}
 	.next{
 		text-align:center;
-		height:95px;
-		line-height:95px;
+		@include line-height(95px);
 		font-size:32px;
 		letter-spacing: 5px;
 		color:#fff;

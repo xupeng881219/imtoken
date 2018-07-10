@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>创建钱包</title>
+    <link rel="stylesheet" href="css/create_wallet.css">
+    <script src="js/flexble.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<div class="header back">
+    创建钱包
+    <s></s>
+</div>
+<div class="tips">
+    <div>
+        <ul>
+            <li>密码用于保护私钥和交易授权,强度非常重要</li>
+            <li>imToken 不储存密码，也无法帮您找回，请务必牢记</li>
+        </ul>
+    </div>
+</div>
+<div class="form_box">
+    <input type="text" placeholder="钱包名称" class="one_line_input">
+    <input type="password" placeholder="密码" class="one_line_input">
+    <input type="password" placeholder="确认密码" class="one_line_input">
+    <input type="text" placeholder="密码提示信息(可不填)" class="one_line_input">
+    <div class="agreement">
+        <i class="ckb"></i>
+        我已经仔细阅读并同意 <a href="#" class="theme_color">服务及隐私条款</a>
+    </div>
+    <a href="#" class="btn_1">创建钱包</a>
+    <div class="theme_color">
+        <a href="#">导入钱包</a>
+    </div>
+</div>
+</body>
+</html>

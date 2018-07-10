@@ -1,0 +1,61 @@
+@import "common";
+body{
+	padding-top:90px;
+}
+.container{
+	padding:65px 40px 0;
+	h4{
+		font-size:36px;
+		color:#000;
+		margin-bottom:25px;
+		text-align:center;
+	}
+	p{
+		color:#949494;
+		margin-bottom:45px;
+		font-size:28px;
+	}
+	.word_list{
+		background: #ececec;
+		@include border-radius(10px);
+		color:#000;
+		font-size:24px;
+		padding:24px 24px 0;
+		margin-bottom:80px;
+		li{
+			float:left;
+			margin-right:12px;
+			margin-bottom:20px;
+			word-break: break-all;
+		}
+		&.word_list_2{
+			min-height:120px;
+			li{
+				@include line-height(58px);
+				padding:0 12px;
+				background: #fff;
+				margin-right:24px;
+				margin-bottom:25px;
+			}
+		}
+	}
+	.word_list_3{
+		margin-top:50px;
+		margin-bottom:28px;
+		li{
+			float:left;
+			color:#000;
+			border-bottom:1px solid #eeeeee;
+			padding:0 15px;
+			@include line-height(58px);
+			margin-bottom:26px;
+			margin-right:24px;
+			font-size:24px;
+			&.active{
+				color:#fff;
+				background:#8aabd1;
+				border-bottom:1px solid #8aabd1;
+			}
+		}
+	}
+}

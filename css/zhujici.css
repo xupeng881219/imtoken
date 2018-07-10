@@ -219,3 +219,78 @@ input {
 .theme_color {
   color: #37bac9;
 }
+
+body {
+  padding-top: 1.2000rem;
+}
+
+.container {
+  padding: 0.8667rem 0.5333rem 0;
+}
+
+.container h4 {
+  font-size: 0.4800rem;
+  color: #000;
+  margin-bottom: 0.3333rem;
+  text-align: center;
+}
+
+.container p {
+  color: #949494;
+  margin-bottom: 0.6000rem;
+  font-size: 0.3733rem;
+}
+
+.container .word_list {
+  background: #ececec;
+  -webkit-border-radius: 0.1333rem;
+  -moz-border-radius: 0.1333rem;
+  border-radius: 0.1333rem;
+  color: #000;
+  font-size: 0.3200rem;
+  padding: 0.3200rem 0.3200rem 0;
+  margin-bottom: 1.0667rem;
+}
+
+.container .word_list li {
+  float: left;
+  margin-right: 0.1600rem;
+  margin-bottom: 0.2667rem;
+  word-break: break-all;
+}
+
+.container .word_list.word_list_2 {
+  min-height: 1.6000rem;
+}
+
+.container .word_list.word_list_2 li {
+  height: 0.7733rem;
+  line-height: 0.7733rem;
+  padding: 0  0.1600rem;
+  background: #fff;
+  margin-right: 0.3200rem;
+  margin-bottom: 0.3333rem;
+}
+
+.container .word_list_3 {
+  margin-top: 0.6667rem;
+  margin-bottom: 0.3733rem;
+}
+
+.container .word_list_3 li {
+  float: left;
+  color: #000;
+  border-bottom: 1px solid #eeeeee;
+  padding: 0  0.2000rem;
+  height: 0.7733rem;
+  line-height: 0.7733rem;
+  margin-bottom: 0.3467rem;
+  margin-right: 0.3200rem;
+  font-size: 0.3200rem;
+}
+
+.container .word_list_3 li.active {
+  color: #fff;
+  background: #8aabd1;
+  border-bottom: 1px solid #8aabd1;
+}

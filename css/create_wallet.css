@@ -219,3 +219,52 @@ input {
 .theme_color {
   color: #37bac9;
 }
+
+body {
+  padding-top: 1.2000rem;
+}
+
+.tips {
+  background: #076cb7;
+  padding: 0.2667rem 0.5333rem;
+  color: #fff;
+  font-size: 0.3200rem;
+  line-height: 1.5em;
+}
+
+.tips > div {
+  padding-left: 0.5333rem;
+}
+
+.tips > div ul {
+  list-style: circle;
+}
+
+.agreement {
+  position: relative;
+  height: 1.2800rem;
+  line-height: 1.2800rem;
+  color: #323232;
+  font-size: 0.3200rem;
+  padding-left: 0.7600rem;
+}
+
+.agreement .ckb {
+  left: 0;
+  width: 0.5333rem;
+  height: 0.5333rem;
+}
+
+.agreement .theme_color {
+  font-size: 0.3200rem;
+}
+
+.theme_color {
+  margin-top: 1.0667rem;
+  text-align: center;
+  font-size: 0.3733rem;
+}
+
+.theme_color a {
+  color: #37bac9;
+}

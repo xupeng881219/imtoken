@@ -1,0 +1,25 @@
+@import "common";
+.wallet_box{
+	width:100%;
+	height:100%;
+	background: linear-gradient(#323491,#38b9c9);
+	color:#fff;
+	font-size:32px;
+	padding-top:520px;
+	text-align:center;
+	h4{
+		font-size:48px;
+	}
+	p{
+		margin:40px 0 90px;
+	}
+	a{
+		background: #73a7c5;
+		display:block;
+		width:480px;
+		margin:0 auto 40px;
+		@include line-height(100px);
+		@include border-radius(50px);
+		color:#fff;
+	}
+}

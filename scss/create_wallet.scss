@@ -1,0 +1,40 @@
+@import "common";
+body{
+	padding-top:90px;
+}
+.tips{
+	background: #076cb7;
+	padding:20px 40px;
+	color:#fff;
+	font-size:24px;
+	line-height:1.5em;
+	&>div{
+		padding-left:40px;
+		ul{
+			list-style: circle;
+		}
+	}
+}
+.agreement{
+	position:relative;
+	@include line-height(96px);
+	color:#323232;
+	font-size:24px;
+	padding-left:57px;
+	.ckb{
+		left:0;
+		width:40px;
+		height:40px;
+	}
+	.theme_color{
+		font-size:24px;
+	}
+}
+.theme_color{
+	margin-top:80px;
+	text-align:center;
+	font-size:28px;
+	a{
+		color:$theme_color;
+	}
+}

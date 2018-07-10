@@ -16,6 +16,7 @@ html * {
 
 html, body {
   font-family: '微软雅黑';
+  height: 100%;
 }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -86,6 +87,11 @@ ins, a {
   text-decoration: none;
 }
 
+input {
+  border: 0;
+  outline: 0;
+}
+
 .clear:after {
   content: '';
   display: block;
@@ -100,7 +106,7 @@ ins, a {
   width: 100%;
   height: 1.2rem;
   line-height: 1.2rem;
-  font-size: 1.3333em;
+  font-size: 0.4800rem;
   color: #585e69;
   position: fixed;
   top: 0;
@@ -112,15 +118,30 @@ ins, a {
 .header.more i {
   position: absolute;
   top: 50%;
-  right: 0.3467rem;
-  height: 0.5333rem;
-  width: 0.5333rem;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+  right: 0.3467rem;
+  height: 0.5333rem;
+  width: 0.5333rem;
   background: url("../images/more.png");
+  background-size: cover;
+}
+
+.header.back s {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 0.4000rem;
+  height: 0.6667rem;
+  width: 0.6667rem;
+  background: url("../images/back.png");
   background-size: cover;
 }
 
@@ -144,6 +165,59 @@ ins, a {
   background: url("../images/sure.png") no-repeat;
   background-size: cover;
   border: 2px solid #37bac9;
+}
+
+.one_line_input {
+  height: 1.0133rem;
+  line-height: 1.0133rem;
+  font-size: 0.3733rem;
+  border-bottom: 1px solid #c3c3c3;
+  width: 100%;
+  color: #333;
+  margin-top: 0.4800rem;
+}
+
+.one_line_input::placeholder {
+  color: #c3c3c3;
+}
+
+.form_box {
+  padding: 0  0.5333rem;
+}
+
+.btn_1 {
+  display: block;
+  text-align: center;
+  -webkit-border-radius: 0.1333rem;
+  -moz-border-radius: 0.1333rem;
+  border-radius: 0.1333rem;
+  color: #fff;
+  background: #d6d6d6;
+  height: 1.2000rem;
+  line-height: 1.2000rem;
+  font-size: 0.3733rem;
+}
+
+.btn_1.active {
+  background: #37bac9;
+}
+
+.btn_2 {
+  text-align: center;
+  -webkit-border-radius: 0.1067rem;
+  -moz-border-radius: 0.1067rem;
+  border-radius: 0.1067rem;
+  color: #fff;
+  background: #37bac9;
+  font-size: 0.4000rem;
+  height: 1.2000rem;
+  line-height: 1.2000rem;
+  margin: 0 auto;
+  width: 2.1867rem;
+}
+
+.theme_color {
+  color: #37bac9;
 }
 
 body {
@@ -172,8 +246,8 @@ body {
 }
 
 .footer .agreement {
-  height: 1.2800rem;
   position: relative;
+  height: 1.2800rem;
   line-height: 1.2800rem;
   padding-left: 1.2667rem;
   color: #323232;
